@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    font-size: 16px;
+    background: url(bg-intro-desktop.png);
+    background: url(bg-intro-mobile.png);
+    background-color: hsl(246, 25%, 77%);
+    background-color: hsl(0, 100%, 74%);   
+}
+
+main{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+h1{
+    color: white;
+    margin: 20px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    width: 400px;
+}
+
+.one{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    padding: left;
+    margin: 20px;
+}
+
+.header{
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0, 8px, 2px -2px;
+    width: 470px;
+}
+
+.A{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.E{
+    padding: 10px;
+    margin: 10px;
+    background-color: hsl(154, 100%, 74%);
+    border-radius: 5px;
+}
+
+.F{
+    padding: 10px;
+    margin: 10px;
+}
