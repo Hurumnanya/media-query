@@ -1,81 +1,215 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-body{
-    font-size: 16px;
-    background: url(bg-intro-desktop.png);
-    background: url(bg-intro-mobile.png);
-    background-color: hsl(246, 25%, 77%);
-    background-color: hsl(0, 100%, 74%);   
-}
-
-main{
-    width: 50%;
-    margin: auto;
+body {
+    padding: 7rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-
+    font-size: 16px;
+    background: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
 }
 
-h1{
+main {
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1,
+.box2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.box1 {
+    width: 38%;
+}
+
+.box2 {
+    width: 50%;
+}
+
+h1 {
+    width: 100%;
     color: white;
-    margin: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    margin: 10px 0;
+}
+
+.one>p {
+    color: white;
     font-family: 'Poppins';
     font-weight: 400;
-    width: 400px;
+    font-size: 0.77rem;
 }
 
-.one{
-    color: white;
-    font-family: 'Poppins';
-    font-weight: 400;
-    padding: left;
-    margin: 20px;
-}
-
-.header{
+.box2>a {
+    width: 100%;
     background-color: hsl(248, 32%, 49%);
     color: white;
     border-radius: 5px;
     text-align: center;
-    padding: 5px;
-    margin: 10px;
+    text-decoration: none;
+    margin-bottom: 40px;
     font-family: 'Poppins';
     font-weight: 400;
+    font-size: 1rem;
+    padding: 15px 20px;
 }
 
-form{
+.box2>a,
+.box2 form {
+    box-shadow: 0 0.5rem rgb(219, 112, 112);
+
+}
+
+form {
+    padding: 30px 20px;
     background-color: white;
     border-radius: 5px;
-    padding: 5px;
     font-family: 'Poppins';
     font-weight: 400;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px 10px 10px 25px;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.button {
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-weight: 400;
     text-align: center;
-    box-shadow: 0, 8px, 2px -2px;
-    width: 470px;
+    padding-top: 5px;
 }
 
-.A{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
+.F {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: .8rem;
 }
 
-.E{
-    padding: 10px;
-    margin: 10px;
-    background-color: hsl(154, 100%, 74%);
-    border-radius: 5px;
+.F>span:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-.F{
-    padding: 10px;
-    margin: 10px;
+/* symbian,java and other small phone, screen: 0px-374px */
+@media only screen and (max-width: 374px) {
+    body {
+        padding: 5rem 0;
+        flex-direction: column;
+        background: url(bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+
+    main {
+        /* background-color: brown; */
+        max-width: 95%;
+        flex-direction: column;
+    }
+
+    /* sorry boss please i went to get water by the time i was coming back i saw something that looked like a mobile phone 
+    please how did you get that. lolz ok i will show you
+    ok thank you boss
+    but in the mobile phase, that header part i mean the one with purple colour is too close to the writup before it
+    ok, to make it easy you can be sending VN. on whatsapp? yes ok sir */
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin: 10px 0;
+    }
+
+    .one{
+        margin: 15px 0 35px 0;  
+    }
+    .one>p {
+       
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /* open mobile view in chrome i've opened it.seen */
+
+    .box2>a {
+        text-align: center;       
+        font-size: 1rem;
+    }
+
+}
+
+/* SmartPhones screen: 375px-767px*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    body {
+        padding: 6rem 0;
+        flex-direction: column;
+        background: url(bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+    }
+
+    main {
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin: 10px 0;
+    }
+
+    .one{
+        margin: 15px 0 35px 0;  
+    }
+    .one>p {
+       
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .box2>a {
+        text-align: center;       
+        font-size: 1rem;
+    }
 }
