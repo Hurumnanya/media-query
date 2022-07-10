@@ -130,16 +130,9 @@ input {
     }
 
     main {
-        /* background-color: brown; */
         max-width: 95%;
         flex-direction: column;
     }
-
-    /* sorry boss please i went to get water by the time i was coming back i saw something that looked like a mobile phone 
-    please how did you get that. lolz ok i will show you
-    ok thank you boss
-    but in the mobile phase, that header part i mean the one with purple colour is too close to the writup before it
-    ok, to make it easy you can be sending VN. on whatsapp? yes ok sir */
 
     .box1,
     .box2 {
@@ -163,8 +156,6 @@ input {
         text-align: center;
         font-size: 1.1rem;
     }
-
-    /* open mobile view in chrome i've opened it.seen */
 
     .box2>a {
         text-align: center;       
