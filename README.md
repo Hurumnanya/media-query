@@ -1,1 +1,1 @@
-# media-query
+# https://hurumnanya.github.io/media-query/
